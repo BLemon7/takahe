@@ -112,7 +112,7 @@ h1 {
 }
 
 h2 {
-    font-size: 36px;
+    font-size: 30px;
     letter-spacing: 5px;
     margin-bottom: 20px;
     margin-top: 10px;
@@ -140,14 +140,6 @@ span {
 }
 
 
-/* BUTTONS */
-
-.btn {
-    text-transform: uppercase;
-    text-align: center;
-}
-
-
 /* HEADER SECTION */
 
 .intro-text p {
@@ -166,18 +158,6 @@ span {
     background-color: ;
     background-size: cover;
     background-repeat: repeat;
-}
-
-.home-page {
-    background-image: url(../images/lemon-bg2.png);
-}
-
-.branding {
-    background-image: url(../images/seamless.svg);
-}
-
-.illustrations {
-    background-image: url(../images/seamlessicons.svg);
 }
 
 .header,
