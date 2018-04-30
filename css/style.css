@@ -47,8 +47,10 @@ th {
 }
 
 th {
-    background: #DFDFDF;
+    background: #44486D;
     font-weight: bold;
+    text-align: center;
+    color: #71B1B1;
 }
 
 td {
@@ -57,15 +59,15 @@ td {
 }
 
 tr:nth-child(even) td {
-    background: #F1F1F1;
+    background: transparent;
 }
 
 tr:nth-child(odd) td {
-    background: #FEFEFE;
+    background: #71B1B1;
 }
 
 tr td:hover {
-    background: #666;
+    background: #A4C976;
     color: #FFF;
 }
 
@@ -332,7 +334,7 @@ span {
 }
 
 .footer {
-    background-color: darkgoldenrod;
+    background-color: #44486D;
     background-attachment: fixed;
     color: white;
     text-align: center;
@@ -340,6 +342,10 @@ span {
     width: 100%;
     padding-top: 20px;
     padding-bottom: 20px;
+}
+
+.footer p {
+    font-size: 12px;
 }
 
 .image {
