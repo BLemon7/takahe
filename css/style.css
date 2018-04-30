@@ -19,13 +19,11 @@ h3 {
 h1 {
     font-family: 'Merienda One', cursive;
     color: rgba(0, 0, 0, 0.7);
-    text-shadow: 3px 3px 3px #fff;
 }
 
 h2 {
     font-family: 'Merienda One', cursive;
     color: rgba(0, 0, 0, 0.7);
-    text-shadow: 3px 3px 3px #fff;
 }
 
 h3 {
@@ -69,6 +67,23 @@ tr:nth-child(odd) td {
 tr td:hover {
     background: #666;
     color: #FFF;
+}
+
+.sky {
+    background-image: url(../images/sky.svg);
+    height: 850px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.foreground {
+    background-image: url(../images/foreground.svg);
+    background-size: cover;
+    background-position: center center;
+    height: 1200px;
+    margin-top: -21em;
 }
 
 b,
