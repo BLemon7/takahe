@@ -72,7 +72,7 @@ tr td:hover {
 }
 
 ul li {
-    list-style-image: url('/images/star.png')
+    list-style-image: url('/images/star.png');
 }
 
 .sky {
@@ -86,7 +86,7 @@ ul li {
 
 .intro {
     font-family: 'Merienda One', cursive;
-    color: #D75F42;
+    color: #3745A5;
 }
 
 .new-zealand {
@@ -94,7 +94,8 @@ ul li {
 }
 
 .wings {
-    background-color: gray;
+    background-image: url(/images/wings.svg);
+    background-repeat: no-repeat;
 }
 
 .moa {
@@ -165,7 +166,7 @@ h2 {
     font-size: 30px;
     letter-spacing: 5px;
     margin-bottom: 20px;
-    margin-top: 10px;
+    margin-top: 0px;
 }
 
 p {
