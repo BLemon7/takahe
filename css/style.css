@@ -91,7 +91,8 @@ ul li {
 }
 
 .new-zealand {
-    background-color: #2E43A9;
+    background-image: url(/images/forest.svg);
+    background-repeat: no-repeat;
 }
 
 .wings {
