@@ -94,8 +94,8 @@ ul li {
 }
 
 .wings {
-    background-image: url(/images/wings.svg);
-    background-repeat: no-repeat;
+    background-image: url(/images/feather-margin.svg);
+    /*  background-repeat: no-repeat; */
 }
 
 .moa {
