@@ -72,7 +72,7 @@ tr td:hover {
 }
 
 ul li {
-    list-style-image: url('/images/star.png');
+    list-style-image: url(../images/star.png');
     font-size: 19px;
     letter-spacing: 1px;
     padding-bottom: 10px;
@@ -104,20 +104,20 @@ ul li {
 }
 
 .new-zealand {
-    background-image: url(/images/forest.svg);
+    background-image: url(../images/forest.svg);
     background-color: #7D9510;
     background-repeat: no-repeat;
 }
 
 .winter {
-    background-image: url(/images/footer.svg);
+    background-image: url(../images/footer.svg);
     background-color: #7D9510;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .wings {
-    background-image: url(/images/feather-margin.svg);
+    background-image: url(../images/feather-margin.svg);
     /*  background-repeat: no-repeat; */
 }
 
