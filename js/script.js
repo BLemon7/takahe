@@ -68,6 +68,10 @@ $(document).ready(function () {
     $(".silhouette").click(function (e) {
         $(".silhouette").fadeOut('slow', function () {
             $(".the-takahe").fadeIn('slow');
+            $(".the-takahe").css({
+                "display": "block",
+                "color": "white"
+            });
         });
     });
 });
