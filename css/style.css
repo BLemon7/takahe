@@ -117,8 +117,9 @@ ul li {
 }
 
 .wings {
-    background-image: url(../images/feather-margin.svg);
-    /*  background-repeat: no-repeat; */
+    background-image: url(../images/stream.svg);
+    background-repeat: no-repeat;
+    margin-top: -40px;
 }
 
 .moa {
@@ -153,6 +154,27 @@ ul li {
     background-position: center center;
     height: 1300px;
     margin-top: -21em;
+}
+
+.fadeInUp {
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+}
+
+.animated1,
+.animated2 {
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.animated1 {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+.animated2 {
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
 }
 
 b,
