@@ -8,6 +8,7 @@ html,
 body {
     max-width: 100%;
     overflow-x: hidden;
+    padding-right: 0 !important;
 }
 
 h1,
@@ -120,10 +121,13 @@ ul li {
     background-image: url(../images/stream.svg);
     background-repeat: no-repeat;
     margin-top: -40px;
+    background-size: cover;
 }
 
 .moa {
-    background-color: #64720F;
+    background-image: url(../images/path.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .wings-image {
