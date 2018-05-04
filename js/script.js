@@ -65,6 +65,10 @@ $(document).ready(function () {
 
 
 $(document).ready(function () {
+
+    $('#myModal').on('shown.bs.modal', function () {
+        $('#myInput').trigger('focus')
+    })
     $(".silhouette").click(function (e) {
         $(".silhouette").fadeOut('slow', function () {
             $(".the-takahe").fadeIn('slow');
