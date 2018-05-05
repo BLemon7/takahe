@@ -110,9 +110,16 @@ ul li {
     background-repeat: no-repeat;
 }
 
+.quest {
+    background-image: url(../images/quest.svg);
+    /* background-color: #7D9510;*/
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .winter {
     background-image: url(../images/footer.svg);
-    background-color: #7D9510;
+    /* background-color: #7D9510;*/
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -128,6 +135,12 @@ ul li {
     background-image: url(../images/path.svg);
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.orbell {
+    margin: 0 auto;
+    display: block;
+    max-height: 250px;
 }
 
 .wings-image {
