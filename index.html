@@ -23,12 +23,91 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" href="css/animate.css">
     <!-- external JS -->
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
     <!-- internal JS -->
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>
+    <script>
+        var map;
 
+        function initMap() {
+            map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 10,
+                center: new google.maps.LatLng(-45.40500836753085, 167.70857431603326),
+                styles: [{
+                    "featureType": "road",
+                    "elementType": "all",
+                    "stylers": [{
+                        "visibility": "off"
+                    }]
+                }, {
+                    "featureType": "water",
+                    "elementType": "all",
+                    "stylers": [{
+                        "color": "#5F90F0"
+                    }]
+                }, {
+                    "featureType": "poi",
+                    "elementType": "geometry.fill",
+                    "stylers": [{
+                        "visibility": "off"
+                    }]
+                }, {
+                    "featureType": "landscape.man_made",
+                    "elementType": "all",
+                    "stylers": [{
+                        "visibility": "on"
+                    }]
+                }, {
+                    "featureType": "landscape.man_made",
+                    "elementType": "geometry.fill",
+                    "stylers": [{
+                        "visibility": "on"
+                    }]
+                }, {
+                    "featureType": "landscape.natural",
+                    "elementType": "all",
+                    "stylers": [{
+                        "color": "#54831B"
+                    }]
+                }, {
+                    "featureType": "landscape.man_made",
+                    "elementType": "all",
+                    "stylers": [{
+                        "color": "#54831B"
+                    }]
+                }, {
+                    "featureType": "poi.park",
+                    "elementType": "labels.text",
+                    "stylers": [{
+                        "color": "#ffffff"
+                    }]
+                }, {
+                    "featureType": "poi.park",
+                    "elementType": "labels.text.stroke",
+                    "stylers": [{
+                        "color": "#54831B"
+                    }]
+                }, {
+                    "featureType": "administrative",
+                    "elementType": "labels.text.fill",
+                    "stylers": [{
+                        "color": "#ffffff"
+                    }]
+                }, {
+                    "featureType": "administrative",
+                    "elementType": "labels.text.stroke",
+                    "stylers": [{
+                        "color": "#54831B"
+                    }]
+                }]
+            });
+        }
+
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBSI8Z4iVsU2OJ2tEDJYxgZrrbVAViOd-Y&callback=initMap" async defer></script>
 </head>
 
 <div class="modal" id="exampleModal" tabindex="-1" role="dialog">
@@ -72,7 +151,7 @@
             <div class="row animated1 fadeInUp">
                 <div class="col-3"></div>
                 <div class="col-6">
-                    <h1>Finding an 'Extinct' New Zealand Bird</h1>
+                    <h1>Finding an 'Extinct' <br>New Zealand Bird</h1>
                     <div class="col-3"></div>
                 </div>
             </div>
@@ -186,7 +265,7 @@
             <div class="row">
                 <div class="col-2"></div>
                 <div class="col-8">
-                    <p>Fast Facts</p>
+                    <h3>Fast Facts</h3>
                     <div class="col-2"></div>
                 </div>
             </div>
@@ -195,19 +274,36 @@
                 <div class="col-2"></div>
                 <div class="col-4">
                     <ul>
-                        <li>Population: 4,107,000</li>
-                        <li>Capital: Wellington; 343,000</li>
-                        <li>Language: English, Maori</li>
-                        <li>Area: 270,534 Square Kilometers (104,454 Square Miles)</li>
+                        <li>
+                            <p>Population: 4,107,000</p>
+                        </li>
+                        <li>
+                            <p>Capital: Wellington; 343,000</p>
+                        </li>
+                        <li>
+                            <p>Language: English, Maori</p>
+                        </li>
+                        <li>
+                            <p>Area: 270,534 Square Kilometers (104,454 Square Miles)</p>
+                        </li>
                     </ul>
                 </div>
                 <div class="col-4">
                     <ul>
-                        <li>Currency: New Zealand Dollar</li>
-                        <li>Life Expectancy: 78</li>
-                        <li>GDP per Capita: U.S. $20,100</li>
-                        <li>Literacy Percent: 99</li>
-                        <li>Religion: Protestant, Roman Catholic</li>
+                        <li>
+                            <p>Currency: New Zealand Dollar</p>
+                        </li>
+                        <li>
+                            <p>Life Expectancy: 78</li>
+                        <li>
+                            <p>GDP per Capita: U.S. $20,100</p>
+                        </li>
+                        <li>
+                            <p>Literacy Percent: 99</p>
+                        </li>
+                        <li>
+                            <p>Religion: Protestant, Roman Catholic</p>
+                        </li>
                     </ul>
                 </div>
                 <div class="col-8"></div>
@@ -281,7 +377,9 @@
                 <div class="row">
                     <div class="col-2"></div>
                     <div class="col-8">
-                        <blockquote>"It originally occurred throughout forest and grass ecosystems. Today it is restricted to alpine tussock grasslands on the mainland and feeds primarily on juices from the bases of snow tussock and a species of fern rhizome. It eats introduced grasses on the islands. It usually lays two eggs and chicks can begin breeding at the end of their first year, but usually start in their second. It is long-lived, probably 14-20 years."</blockquote>
+                        <blockquote>
+                            <p>"It originally occurred throughout forest and grass ecosystems. Today it is restricted to alpine tussock grasslands on the mainland and feeds primarily on juices from the bases of snow tussock and a species of fern rhizome. It eats introduced grasses on the islands. It usually lays two eggs and chicks can begin breeding at the end of their first year, but usually start in their second. It is long-lived, probably 14-20 years."</p>
+                        </blockquote>
                         <p>—Heather and Robertson</p>
                     </div>
                     <div class="col-2"></div>
@@ -446,7 +544,7 @@
         </div>
     </div>
 
-    <iframe width="100%" height="420" src="https://maps.stamen.com/terrain/embed#7/-45.143/-191.250"></iframe>
+    <div id="map"></div>
 
 
     <!-- IMAGE TO BE REPLACED BY INTERACTIVE MAP
@@ -502,7 +600,9 @@
             <div class="row">
                 <div class="col-2"></div>
                 <div class="col-8">
-                    <blockquote>"It might be worth £400 to £500," the man said with a knowing air.</blockquote>
+                    <blockquote>
+                        <p>"It might be worth £400 to £500," the man said with a knowing air.</p>
+                    </blockquote>
                 </div>
                 <div class="col-2"></div>
             </div>
